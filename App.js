@@ -38,11 +38,12 @@ function App() {
         console.log('Correo electrónico enviado con éxito!', response.status, response.text);
         setShowAlert(true); // Mostrar alerta de éxito
         event.target.reset(); // Limpiar el formulario
-      })
-      .catch((err) => {
+      }).catch((err) => {
         console.error('Error al enviar el correo electrónico:', err);
     
   });
+}
+
 
 
 
@@ -224,6 +225,6 @@ function App() {
       </Container>
     </div>
   );
-}};
+};
 
 export default App;
